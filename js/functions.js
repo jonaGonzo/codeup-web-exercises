@@ -89,7 +89,7 @@ function calculateTip(tipPercent, totalBill) {
  */
 let yourBill = prompt("What is the bill total?"),
 yourTip = prompt("What percentage do you wan to tip?");
-alert(calculateTip(yourBill, yourTip));
+alert("Your total tip is $"+ calculateTip(yourBill, yourTip).toFixed(2));
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -105,3 +105,9 @@ alert(calculateTip(yourBill, yourTip));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
+function applyDiscount(price, discount) {
+    let dicountPrice = price * (discount/100);
+    return "You saved $" + dicountPrice;
+}
+
+console.log(applyDiscount(100, 10));
