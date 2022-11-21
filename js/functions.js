@@ -106,8 +106,8 @@ alert("Your total tip is $"+ calculateTip(yourBill, yourTip).toFixed(2));
  */
 
 function applyDiscount(price, discount) {
-    let dicountPrice = price * (discount/100);
-    return "You saved $" + dicountPrice;
+    let discountPrice = price * (discount/100);
+    return "You saved $" + discountPrice;
 }
 
 console.log(applyDiscount(100, 10));
