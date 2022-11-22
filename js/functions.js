@@ -10,11 +10,11 @@
  */
 
 function sayHello(name){
-    let message = "Hello "  + name + "!";
+    let message = "Hello, "  + name + "!";
     return message;
 }
 
-/* console.log(sayHello()); */
+console.log(sayHello("codeup"));
 
 /**
  * TODO:
@@ -24,7 +24,7 @@ function sayHello(name){
  * console.log 'helloMessage' to check your work
  */
 
-let helloMessage = sayHello("Jona");
+let helloMessage = sayHello("Jonathan");
 console.log(helloMessage);
 
 /**
@@ -35,7 +35,8 @@ console.log(helloMessage);
  */
 
 let myName = "Jona";
-console.log(sayHello(myName));
+let helloMessage2 = sayHello(myName);
+console.log(helloMessage2);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -61,7 +62,8 @@ var random = Math.floor((Math.random() * 3) + 1);
 console.log(random);
 
 function isTwo(num){
-    return(num == 2);
+    let answer = num === 2;
+    return answer;
 }
 console.log(isTwo(random));
 
