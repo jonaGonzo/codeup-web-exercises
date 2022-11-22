@@ -59,8 +59,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-console.log(random);
+console.log("The random number is " + random + ".");
 
+isTwo(random);
+console.log("Is the random number 2?")
 function isTwo(num){
     let answer = num === 2;
     return answer;
@@ -79,9 +81,12 @@ console.log(isTwo(random));
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-function calculateTip(tipPercent, totalBill) {
-    let billTotal = (tipPercent / 100) * totalBill;
-    return billTotal;
+function calculateTip(total, tip) {
+    console.log("Running tip calculation...")
+    console.log("The tip entered is " + total + "%.")
+    let tipCal = (tip / 100);
+    let answer = (total * tipCal);
+    return answer.toFixed(2);
 }
 /**
  * TODO:
@@ -89,9 +94,10 @@ function calculateTip(tipPercent, totalBill) {
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-let yourBill = prompt("What is the bill total?"),
-yourTip = prompt("What percentage do you wan to tip?");
-alert("Your total tip is $"+ calculateTip(yourBill, yourTip).toFixed(2));
+// let yourBill = prompt("What is the bill total?"),
+// yourTip = prompt("What percentage would you like to tip?");
+// alert("Your total tip is $"+ calculateTip(yourTip, yourBill));
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -107,9 +113,15 @@ alert("Your total tip is $"+ calculateTip(yourBill, yourTip).toFixed(2));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
+var originalPrice = 100;
+var discountPercent = 20;
+let appliedDiscount = applyDiscount(originalPrice, discountPercent);
+console.log("Discount percentage is " + discountPercent + "%");
+console.log(appliedDiscount);
+
 function applyDiscount(price, discount) {
-    let discountPrice = price * (discount/100);
-    return "You saved $" + discountPrice;
+    let discountCal = discount/100;
+    let result = (1 - discountCal) * price;
+    return "You bill is $" + result.toFixed(2);
 }
 
-console.log(applyDiscount(100, 10));
