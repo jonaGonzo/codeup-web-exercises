@@ -9,8 +9,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-function sayHello(name){
-    let message = "Hello, "  + name + "!";
+ const sayHello = (name) => {
+    let message = `Hello,${name}!`;
     return message;
 }
 
@@ -83,7 +83,7 @@ console.log(isTwo(random));
 
 function calculateTip(total, tip) {
     console.log("Running tip calculation...")
-    console.log("The tip entered is " + total + "%.")
+    console.log(`The tip entered is ${total}%.`)
     let tipCal = (tip / 100);
     let answer = (total * tipCal);
     return answer.toFixed(2);
@@ -94,9 +94,9 @@ function calculateTip(total, tip) {
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-// let yourBill = prompt("What is the bill total?"),
-// yourTip = prompt("What percentage would you like to tip?");
-// alert("Your total tip is $"+ calculateTip(yourTip, yourBill));
+let yourBill = prompt("What is the bill total?"),
+yourTip = prompt("What percentage would you like to tip?");
+alert(`Your total tip is $${calculateTip(yourTip, yourBill)}`);
 
 /**
  * TODO:
@@ -116,12 +116,12 @@ function calculateTip(total, tip) {
 var originalPrice = 100;
 var discountPercent = 20;
 let appliedDiscount = applyDiscount(originalPrice, discountPercent);
-console.log("Discount percentage is " + discountPercent + "%");
+console.log(`Discount percentage is ${discountPercent}%`);
 console.log(appliedDiscount);
 
 function applyDiscount(price, discount) {
     let discountCal = discount/100;
     let result = (1 - discountCal) * price;
-    return "You bill is $" + result.toFixed(2);
+    return `You bill is $${result.toFixed(2)}`;
 }
 
