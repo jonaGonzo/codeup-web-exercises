@@ -53,24 +53,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-var analyzeColor = randomColor;
-console.log(randomColor);
-switch (analyzeColor) {
-    case "blue":
-        console.log("Blue is the color of the ocean.");
-        break;
-    case "red":
-        console.log("Clowns have a red nose");
-        break;
-    case "yellow":
-        console.log("Sunflowers are yellow.");
-        break;
-    case "green":
-        console.log("Green is the color of my grass.")
-        break;
-    default:
-        console.log("I dont know anything about that color.")
-}
+// var analyzeColor = randomColor;
+// console.log(randomColor);
+// switch (analyzeColor) {
+//     case "blue":
+//         console.log("Blue is the color of the ocean.");
+//         break;
+//     case "red":
+//         console.log("Clowns have a red nose");
+//         break;
+//     case "yellow":
+//         console.log("Sunflowers are yellow.");
+//         break;
+//     case "green":
+//         console.log("Green is the color of my grass.")
+//         break;
+//     default:
+//         console.log("I dont know anything about that color.")
+// }
 
 /**
  * TODO:
@@ -78,6 +78,24 @@ switch (analyzeColor) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+var analyzeColor = prompt("what is your favorite color?");
+switch (analyzeColor) {
+    case "blue":
+        alert("Blue is the color of the ocean.");
+        break;
+    case "red":
+       alert("Clowns have a red nose");
+        break;
+    case "yellow":
+        alert("Sunflowers are yellow.");
+        break;
+    case "green":
+        alert("Green is the color of my grass.");
+        break;
+    default:
+        alert("I dont know anything about that color.");
+        break;
+}
 
 /* ########################################################################## */
 
