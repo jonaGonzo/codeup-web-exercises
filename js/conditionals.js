@@ -25,6 +25,7 @@
 // console.log(color)
 //
 // analyzeColor(color);
+//
 // function analyzeColor(color){
 //     if (color === "blue") {
 //         console.log("Blue is the color of the ocean.");
@@ -55,6 +56,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // var analyzeColor = randomColor;
 // console.log(randomColor);
+//
 // switch (analyzeColor) {
 //     case "blue":
 //         console.log("Blue is the color of the ocean.");
@@ -78,24 +80,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var analyzeColor = prompt("what is your favorite color?");
-switch (analyzeColor) {
-    case "blue":
-        alert("Blue is the color of the ocean.");
-        break;
-    case "red":
-       alert("Clowns have a red nose");
-        break;
-    case "yellow":
-        alert("Sunflowers are yellow.");
-        break;
-    case "green":
-        alert("Green is the color of my grass.");
-        break;
-    default:
-        alert("I dont know anything about that color.");
-        break;
-}
+// var analyzeColor = prompt("what is your favorite color?");
+// switch (analyzeColor) {
+//     case "blue":
+//         alert("Blue is the color of the ocean.");
+//         break;
+//     case "red":
+//        alert("Clowns have a red nose");
+//         break;
+//     case "yellow":
+//         alert("Sunflowers are yellow.");
+//         break;
+//     case "green":
+//         alert("Green is the color of my grass.");
+//         break;
+//     default:
+//         alert("I dont know anything about that color.");
+//         break;
+// }
 
 /* ########################################################################## */
 
@@ -119,6 +121,31 @@ switch (analyzeColor) {
  * return value.
  */
 
+// let luckyNumber = Math.floor((Math.random() * 6) + 0);
+// console.log(`The random discount number is ${luckyNumber}`);
+// let userAmount = prompt(`What is the total amount of your bill?`);
+// console.log(`The user's bill is ${userAmount}`);
+// console.log(`Your new discounted total is ${calculateTotal(luckyNumber, userAmount)}.`);
+//
+// function calculateTotal(luckyNumber, userAmount) {
+//
+//     if (luckyNumber === 0) {
+//         return `Sorry no discount`;
+//     } else if (luckyNumber === 1) {
+//         return "$" + (.9 * userAmount);
+//     } else if (luckyNumber === 2) {
+//         return "$" + (.75 * userAmount);
+//     } else if (luckyNumber === 3) {
+//         return "$" + (.65 * userAmount);
+//     } else if (luckyNumber === 4) {
+//         return "$" + (.5 * userAmount);
+//     } else {
+//         return `Congratulations, you get everything for FREE!!!`
+//     }
+// }
+
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -129,6 +156,32 @@ switch (analyzeColor) {
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+// let luckyNumber = 1;
+// console.log(`The random discount number is ${luckyNumber}`);
+// let userAmount = prompt(`What is the total amount of your bill?`);
+// console.log(`The user's bill is ${userAmount}`);
+//
+// calculateTotal();
+//
+// function calculateTotal(luckyNumber, userAmount) {
+//
+//     if (luckyNumber === 0) {
+//         alert(`Your lucky number was 0, Sorry no discount`);
+//     } else if (luckyNumber === 1) {
+//         alert("Your lucky number was 1, your new discounted price is $" + (.9 * userAmount));
+//     } else if (luckyNumber === 2) {
+//         alert("Your lucky number was 2, your new discounted price is $" + (.75 * userAmount));
+//     } else if (luckyNumber === 3) {
+//         alert("Your lucky number was 3, your new discounted price is $" + (.65 * userAmount));
+//     } else if (luckyNumber === 4) {
+//         alert("Your lucky number was 4, your new discounted price is $" + (.5 * userAmount));
+//     } else {
+//         alert(`Your lucky number was 5, Congratulations, you get everything for FREE!!!`);
+//     }
+// }
+
+
 
 /**
  * TODO:
@@ -148,3 +201,18 @@ switch (analyzeColor) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+confirm(`Would you like to enter a number?`) {
+    if (true)
+        let userNumber = prompt(`What number would you like to enter?`) {
+        if (userNumber % 2 == 0 ) {
+            alert(`Your number is even.`)
+            alert(`Your number plus 100 is ${userNumber + 100}.`)
+            alert
+        } else {
+            alert(`Your number is odd.`)
+        }
+    }
+}
+
+function isEven(userNumber);
