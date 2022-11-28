@@ -21,20 +21,20 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-// let color = "blue"
-// console.log(color)
-//
-// analyzeColor(color);
-//
-// function analyzeColor(color){
-//     if (color === "blue") {
-//         console.log("Blue is the color of the ocean.");
-//     } else if  (color === "red") {
-//         console.log("Clowns have red noses.");
-//     } else {
-//         console.log(`I don't know anything about ${color}.`);
-//     }
-// }
+let color = "blue"
+console.log(color)
+
+analyzeColor(color);
+
+function analyzeColor(color){
+    if (color === "blue") {
+        console.log("Blue is the color of the ocean.");
+    } else if  (color === "red") {
+        console.log("Clowns have red noses.");
+    } else {
+        console.log(`I don't know anything about ${color}.`);
+    }
+}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -54,25 +54,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-// var analyzeColor = randomColor;
-// console.log(randomColor);
-//
-// switch (analyzeColor) {
-//     case "blue":
-//         console.log("Blue is the color of the ocean.");
-//         break;
-//     case "red":
-//         console.log("Clowns have a red nose");
-//         break;
-//     case "yellow":
-//         console.log("Sunflowers are yellow.");
-//         break;
-//     case "green":
-//         console.log("Green is the color of my grass.")
-//         break;
-//     default:
-//         console.log("I dont know anything about that color.")
-// }
+var analyzeColor = randomColor;
+console.log(randomColor);
+
+switch (analyzeColor) {
+    case "blue":
+        console.log("Blue is the color of the ocean.");
+        break;
+    case "red":
+        console.log("Clowns have a red nose");
+        break;
+    case "yellow":
+        console.log("Sunflowers are yellow.");
+        break;
+    case "green":
+        console.log("Green is the color of my grass.")
+        break;
+    default:
+        console.log("I dont know anything about that color.")
+}
 
 /**
  * TODO:
@@ -80,24 +80,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-// var analyzeColor = prompt("what is your favorite color?");
-// switch (analyzeColor) {
-//     case "blue":
-//         alert("Blue is the color of the ocean.");
-//         break;
-//     case "red":
-//        alert("Clowns have a red nose");
-//         break;
-//     case "yellow":
-//         alert("Sunflowers are yellow.");
-//         break;
-//     case "green":
-//         alert("Green is the color of my grass.");
-//         break;
-//     default:
-//         alert("I dont know anything about that color.");
-//         break;
-// }
+var analyzeColor = prompt("what is your favorite color?");
+switch (analyzeColor) {
+    case "blue":
+        alert("Blue is the color of the ocean.");
+        break;
+    case "red":
+       alert("Clowns have a red nose");
+        break;
+    case "yellow":
+        alert("Sunflowers are yellow.");
+        break;
+    case "green":
+        alert("Green is the color of my grass.");
+        break;
+    default:
+        alert("I dont know anything about that color.");
+        break;
+}
 
 /* ########################################################################## */
 
@@ -153,33 +153,33 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Prompt the user for their total bill, then use your `calculateTotal` function
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
- */
+//  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
-// let luckyNumber = 1;
-// console.log(`The random discount number is ${luckyNumber}`);
-// let userAmount = prompt(`What is the total amount of your bill?`);
-// console.log(`The user's bill is ${userAmount}`);
-//
-// calculateTotal();
-//
-// function calculateTotal(luckyNumber, userAmount) {
-//
-//     if (luckyNumber === 0) {
-//         alert(`Your lucky number was 0, Sorry no discount`);
-//     } else if (luckyNumber === 1) {
-//         alert("Your lucky number was 1, your new discounted price is $" + (.9 * userAmount));
-//     } else if (luckyNumber === 2) {
-//         alert("Your lucky number was 2, your new discounted price is $" + (.75 * userAmount));
-//     } else if (luckyNumber === 3) {
-//         alert("Your lucky number was 3, your new discounted price is $" + (.65 * userAmount));
-//     } else if (luckyNumber === 4) {
-//         alert("Your lucky number was 4, your new discounted price is $" + (.5 * userAmount));
-//     } else {
-//         alert(`Your lucky number was 5, Congratulations, you get everything for FREE!!!`);
-//     }
-// }
+let luckyNumber = Math.floor((Math.random() * 6) + 0);
+console.log(`The random discount number is ${luckyNumber}`);
+let userAmount = prompt(`What is the total amount of your bill?`);
+console.log(`The user's bill is ${userAmount}`);
+
+calculateTotal(luckyNumber, userAmount);
+
+function calculateTotal(luckyNumber, userAmount) {
+
+    if (luckyNumber === 0) {
+        alert(`Your lucky number was 0, Sorry no discount`);
+    } else if (luckyNumber === 1) {
+        alert("Your lucky number was 1, your new discounted price is $" + (.9 * userAmount).toFixed(2));
+    } else if (luckyNumber === 2) {
+        alert("Your lucky number was 2, your new discounted price is $" + (.75 * userAmount).toFixed(2));
+    } else if (luckyNumber === 3) {
+        alert("Your lucky number was 3, your new discounted price is $" + (.65 * userAmount).toFixed(2));
+    } else if (luckyNumber === 4) {
+        alert("Your lucky number was 4, your new discounted price is $" + (.5 * userAmount).toFixed(2));
+    } else {
+        alert(`Your lucky number was 5, Congratulations, you get everything for FREE!!!`);
+    }
+}
 
 
 
