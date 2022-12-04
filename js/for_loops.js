@@ -1,3 +1,5 @@
+// For loops #2
+
 showMultiplicationTable(7);
 
 function showMultiplicationTable(input) {
@@ -6,6 +8,9 @@ function showMultiplicationTable(input) {
         console.log(number);
     }
 }
+
+
+// For loops #3
 
 getRandomNumber(20, 200);
 
@@ -17,6 +22,10 @@ function getRandomNumber(min, max) {
         console.log(`The number ${num} is  ${isEven(num)}`);
     }
 }
+
+
+//For loops #4
+
 function isEven(num){
     return (num % 2 === 0) ? "even" : "odd";
 }
@@ -28,6 +37,10 @@ for(let i = 0; i < 10; i++){
     }
     console.log(numArray.join(""))
 }
+
+
+//For loops #5
+
 for(let i = 100; i > 0 ; i -= 5){
     console.log(i);
 }
