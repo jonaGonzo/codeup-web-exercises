@@ -107,7 +107,6 @@
         }
         return sum;
     }
-    console.log(returnSum(myNumbers));
-    console.log(returnSum(myNumbers));
+
 
 })();
