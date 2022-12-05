@@ -25,18 +25,21 @@
      * string, and <li> tags around each planet.
      */
 
-    // let planetsArrayBr = planetsArray.join("<br>");
-    // console.log(planetsArrayBr);
+    let planetsArrayBr = planetsArray.join("<br>");
+    console.log(planetsArrayBr);
+    document.write(planetsArrayBr);
+
+
 
 //    BONUS
-    let display = planetsArray.map(item => {
+
+    let planetList = planetsArray.map(item => {
         return '<li>' + item + '</li>';
         })
-    let wrapDisplay = '<ul>' + display.join('') + '</ul>';
+    let wrapDisplay = '<ul>' + planetList.join('') + '</ul>';
 
     console.log(wrapDisplay);
     document.write(wrapDisplay);
-
 
     // console.log(`<ul><li>${planetsArray.join('</li><li>')}</li></ul>`);
 
