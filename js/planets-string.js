@@ -29,13 +29,15 @@
     // console.log(planetsArrayBr);
 
 //    BONUS
-//     let display = planetsArray.map(item => {
-//         return '<li>' + item + '</li>';
-//         })
-//     let wrapDisplay = '<ul>' + display.join('') + '</ul>';
-//     console.log(wrapDisplay);
+    let display = planetsArray.map(item => {
+        return '<li>' + item + '</li>';
+        })
+    let wrapDisplay = '<ul>' + display.join('') + '</ul>';
+
+    console.log(wrapDisplay);
+    document.write(wrapDisplay);
 
 
-    console.log(`<ul><li>${planetsArray.join('</li><li>')}</li></ul>`);
+    // console.log(`<ul><li>${planetsArray.join('</li><li>')}</li></ul>`);
 
 })();
