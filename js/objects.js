@@ -49,11 +49,22 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function (shopper){
+        let isDiscount = "Congrats! You get $" + (shopper.amount * .12).toFixed(2) + " off!";
+        let withDiscount = "You're new total is $" + Number(shopper.amount - (shopper.amount * .12)).toFixed(2);
+            console.log(shopper.name);
+            console.log(`Your total is $${(shopper.amount).toFixed(2)}`);
+        if (shopper.amount > 200){
+            console.log(isDiscount);
+            console.log(withDiscount);
+        }
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -67,6 +78,18 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {title: "The Salmon of Doubt", authorFirstName: "Douglas", authorLastName: "Adams"},
+        {title: "The Teachings of Don Juan: A Yaqui Way of Knowledge", authorFirstName: "Carlos", authorLastName: "Castaneda"},
+        {title: "The Kindness of Strangers: Penniless Across America", authorFirstName: "Mike", authorLastName: "McIntyre"},
+        {title: "The Art of War", authorFirstName: "Sun", authorLastName: "Tzu"},
+        {title: "How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease", authorFirstName: "Dr. Michael ", authorLastName: "Greger, M.D."}
+    ]
+
+    console.log(books[1].title);
+    console.log(books[1].authorFirstName);
+    console.log(books[1].authorLastName);
 
     /**
      * TODO:
@@ -92,6 +115,13 @@
      *      ---
      *      ...
      */
+    for (let i = 0; i < books.length; i += 1) {
+        let author = books[i].authorFirstName + " " + books[i].authorLastName;
+        console.log("Book # " + (i+1));
+        console.log("Title: " + books[i].title);
+        console.log("Author: " + author);
+    }
+
 
     /**
      * Bonus:
@@ -103,6 +133,7 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
 
 
 
