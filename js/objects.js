@@ -30,12 +30,15 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+
     person.sayHello = function () {
-        return "Hello from " + this.firstName + " " + this.lastName + "!";
+        return `Hello from ${this.firstName} ${this.lastName}!`;
     }
 
     console.log(person.sayHello())
 
+    person.middleName = "Andrew";
+    console.log(person);
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -51,17 +54,17 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
+    let shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
 
     shoppers.forEach(function (shopper){
-        let isDiscount = "Congrats! You get $" + (shopper.amount * .12).toFixed(2) + " off!";
-        let withDiscount = "You're new total is $" + Number(shopper.amount - (shopper.amount * .12)).toFixed(2);
+        let isDiscount = "Wait! You get " + (shopper.amount * .12).toLocaleString('en-US', {style:'currency', currency: 'USD'}) + " off for spending more than $200 today at H.E.B.!";
+        let withDiscount = "You're final bill is " + Number(shopper.amount - (shopper.amount * .12)).toLocaleString('en-US', {style:'currency', currency: 'USD'});
             console.log(shopper.name);
-            console.log(`Your total is $${(shopper.amount).toFixed(2)}`);
+            console.log(`Your bill is\n${(shopper.amount).toLocaleString('en-US', {style:'currency', currency: 'USD'})}`);
         if (shopper.amount > 200){
             console.log(isDiscount);
             console.log(withDiscount);
