@@ -19,6 +19,7 @@
     console.log(person.firstName);
     console.log(person.lastName);
 
+
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -34,6 +35,7 @@
     }
 
     console.log(person.sayHello())
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -66,6 +68,7 @@
         }
     });
 
+
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -91,6 +94,7 @@
     console.log(books[1].authorFirstName);
     console.log(books[1].authorLastName);
 
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -115,6 +119,7 @@
      *      ---
      *      ...
      */
+
     for (let i = 0; i < books.length; i += 1) {
         let author = books[i].authorFirstName + " " + books[i].authorLastName;
         console.log("Book # " + (i+1));
