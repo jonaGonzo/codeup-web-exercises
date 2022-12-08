@@ -63,14 +63,15 @@
     shoppers.forEach(function (shopper){
         let isDiscount = "Wait! You get " + (shopper.amount * .12).toLocaleString('en-US', {style:'currency', currency: 'USD'}) + " off for spending more than $200 today at H.E.B.!";
         let withDiscount = "You're final bill is " + Number(shopper.amount - (shopper.amount * .12)).toLocaleString('en-US', {style:'currency', currency: 'USD'});
-            console.log(shopper.name);
-            console.log(`Your bill is\n${(shopper.amount).toLocaleString('en-US', {style:'currency', currency: 'USD'})}`);
+            console.log(`\n${shopper.name}`);
+            console.log(`Your bill is ${(shopper.amount).toLocaleString('en-US', {style:'currency', currency: 'USD'})}`);
         if (shopper.amount > 200){
             console.log(isDiscount);
             console.log(withDiscount);
         }
     });
 
+    console.log(`\n`)
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
