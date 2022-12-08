@@ -137,13 +137,18 @@
      *      ...
      */
 
-    for (let i = 0; i < books.length; i += 1) {
-        let author = `${books[i].authorFirstName} ${books[i].authorLastName}`;
-        console.log(`Book # ${(i+1)}`);
-        console.log(`Title: ${books[i].title}`);
-        console.log(`Author: ${author}\n`);
-    }
+    // for (let i = 0; i < books.length; i += 1) {
+    //     let author = `${books[i].authorFirstName} ${books[i].authorLastName}`;
+    //     console.log(`Book # ${(i+1)}`);
+    //     console.log(`Title: ${books[i].title}`);
+    //     console.log(`Author: ${author}\n`);
+    // }
 
+    books.forEach( function (book, index){
+        let author = `${book.authorFirstName} ${book.authorLastName}`;
+        let bookNumber = index + 1;
+            console.log(`Book # ${bookNumber}\nTitle: ${book.title}\nAuthor: ${author}\n---`);
+    });
 
     /**
      * Bonus:
