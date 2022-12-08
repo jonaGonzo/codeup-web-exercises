@@ -161,7 +161,26 @@
      *   `showBookInfo` function.
      */
 
+    // let myAuthor = "Jona Gonzalez";
+    // let jonasBook = createBook("I Code for Me", "Jona Gonzalez")
+    function createBook(title, author){
+        let authorArray = author.split(' ');
+        let bookObject = {
+            title: title,
+            author: {
+                firstName: authorArray[0],
+                lastName: authorArray[1]
+            }
+        }
+        return bookObject;
+    }
 
+    console.log( createBook("The Teachings of Don Juan: A Yaqui Way of Knowledge", "Carlos Castaneda"))
 
+    let books2 =[
+        createBook("I Code for Me", "Jona Gonzalez"),
+        createBook("Art of War", "Sun Tzu")
+    ]
+    console.log(books2[1])
 
 })();
