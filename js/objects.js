@@ -19,6 +19,7 @@
     console.log(person.firstName);
     console.log(person.lastName);
 
+    console.log(`\n`)
 
     /**
      * TODO:
@@ -39,6 +40,7 @@
 
     person.middleName = "Andrew";
     console.log(person);
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -61,7 +63,7 @@
     ];
 
     shoppers.forEach(function (shopper){
-        let isDiscount = "Wait! You get " + (shopper.amount * .12).toLocaleString('en-US', {style:'currency', currency: 'USD'}) + " off for spending more than $200 today at H.E.B.!";
+        let isDiscount = "Wait! You get " + (shopper.amount * .12).toLocaleString('en-US', {style:'currency', currency: 'USD'}) + " off (12% off) for spending more than $200 today at H.E.B.!";
         let withDiscount = "You're final bill is " + Number(shopper.amount - (shopper.amount * .12)).toLocaleString('en-US', {style:'currency', currency: 'USD'});
             console.log(`\n${shopper.name}`);
             console.log(`Your bill is ${(shopper.amount).toLocaleString('en-US', {style:'currency', currency: 'USD'})}`);
@@ -86,7 +88,7 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var books = [
+    let books = [
         {title: "The Salmon of Doubt", authorFirstName: "Douglas", authorLastName: "Adams"},
         {title: "The Teachings of Don Juan: A Yaqui Way of Knowledge", authorFirstName: "Carlos", authorLastName: "Castaneda"},
         {title: "The Kindness of Strangers: Penniless Across America", authorFirstName: "Mike", authorLastName: "McIntyre"},
@@ -98,6 +100,7 @@
     console.log(books[1].authorFirstName);
     console.log(books[1].authorLastName);
 
+    console.log(`\n`)
 
     /**
      * TODO:
@@ -128,7 +131,7 @@
         let author = books[i].authorFirstName + " " + books[i].authorLastName;
         console.log("Book # " + (i+1));
         console.log("Title: " + books[i].title);
-        console.log("Author: " + author);
+        console.log(`Author: ${author}\n`);
     }
 
 
