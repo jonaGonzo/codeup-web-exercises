@@ -89,11 +89,21 @@
      */
 
     let books = [
-        {title: "The Salmon of Doubt", authorFirstName: "Douglas", authorLastName: "Adams"},
-        {title: "The Teachings of Don Juan: A Yaqui Way of Knowledge", authorFirstName: "Carlos", authorLastName: "Castaneda"},
-        {title: "The Kindness of Strangers: Penniless Across America", authorFirstName: "Mike", authorLastName: "McIntyre"},
-        {title: "The Art of War", authorFirstName: "Sun", authorLastName: "Tzu"},
-        {title: "How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease", authorFirstName: "Dr. Michael ", authorLastName: "Greger, M.D."}
+        {title: "The Salmon of Doubt",
+            authorFirstName: "Douglas",
+            authorLastName: "Adams"},
+        {title: "The Teachings of Don Juan: A Yaqui Way of Knowledge",
+            authorFirstName: "Carlos",
+            authorLastName: "Castaneda"},
+        {title: "The Kindness of Strangers: Penniless Across America",
+            authorFirstName: "Mike",
+            authorLastName: "McIntyre"},
+        {title: "The Art of War",
+            authorFirstName: "Sun",
+            authorLastName: "Tzu"},
+        {title: "How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease",
+            authorFirstName: "Dr. Michael ",
+            authorLastName: "Greger, M.D."}
     ]
 
     console.log(books[1].title);
@@ -128,9 +138,9 @@
      */
 
     for (let i = 0; i < books.length; i += 1) {
-        let author = books[i].authorFirstName + " " + books[i].authorLastName;
-        console.log("Book # " + (i+1));
-        console.log("Title: " + books[i].title);
+        let author = `${books[i].authorFirstName} ${books[i].authorLastName}`;
+        console.log(`Book # ${(i+1)}`);
+        console.log(`Title: ${books[i].title}`);
         console.log(`Author: ${author}\n`);
     }
 
