@@ -1,0 +1,10 @@
+.main-logo {
+    height: 32px;
+    width: 32px;
+}
+
+.sub-logo {
+    height: 30px;
+    width: 30px;
+    float: left;
+}
