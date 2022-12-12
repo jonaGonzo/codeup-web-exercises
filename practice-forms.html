@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Practice HTML Forms</title>
+  </head>
+  <body>
+    <main>
+      <form method="GET" action="https://request-inspector.glitch.me/"></form>
+      <label for="name">Your Name</label>
+      <br>
+      <input id="name" name="name" type="text" required>
+      <input id="name" name="name" type="text" required>
+      <br>
+      <span style="margin-right: 38px">First Name</span> <span style="margin-left: 37px">Last Name</span>
+      <br>
+      <label for="BusinessName">Business Name</label>
+      <br>
+      <input id="BusinessName" name="BusinessName" type="text" required>
+      <br>
+      <label for="email">Email</label>
+      <br>
+      <input id="email" name="email" type="email" placeholder="ex. myname@example.com" required>
+      <br>
+      <span>ex. myname@example.com</span>
+      <br>
+      <label for="phone">Phone Number</label>
+      <br>
+      <input id="phone" name="phone" type="tel" placeholder="(000) 000-000" required>
+      <br>
+      <label for="city">City where you are located</label>
+      <br>
+      <input id="city" name="city" type="text" required>
+      <br>
+      <label for="selling">List the product(s) you will be selling</label>
+      <br>
+      <textarea id="selling" name="selling" required></textarea>
+      <br>
+      <label for="request">Special Requests</label>
+      <br>
+      <input id="request" name="request" type="text">
+      <br>
+      <p><strong>Consent to Photograph /Videotape / Interview Individuals</strong></p>
+      <p>Please read, date and provide your signature on the next pages</p>
+      <p><strong>Terms & Conditions</strong></p>
+      <p>I hereby agree and give my permission for Rise Asset Development and/or partners to record, film,photograph, audiotape or videotape myself (hereinafter collectively referred to as “Works”) and to display, publish or distribute these Works for the purpose of publishing, posting on the Rise Asset Development website and posting on social media sites. I hereby waive any right to approve the use of these Works now or in the future, whether the use is known to me or unknown, and I waive any right to any royalties related to the use of these Works. I understand that the Works may appear in electronic form on the internet or in other publications outside of the Rise Asset Development’s control. I agree that I will not hold the Rise Asset Development responsible for any harm that may arise from such unauthorized reproduction.</p>
+      <label for="calendar"></label>
+      <br>
+      <input id="calendar" name="city" type="date" required>
+      <br>
+      <label for="signature"><strong>I am over 18 years-of-age and I have read this waiver and am familiar with its content</strong></label>
+      <br>
+      <canvas id="signature" role="application" width="300" height="100" style="border: 2px solid #000" aria-required="true"></canvas>
+      <br>
+      <button>Submit</button>
+    </main>
+  </body>
+</html>

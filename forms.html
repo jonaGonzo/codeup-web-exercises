@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+  </head>
+  <body>
+    <main>
+      <form method="POST" action="https://request-inspector.glitch.me/">
+        <section>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" placeholder="Enter email">
+          </div><br>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="text" placeholder="Enter password">
+          </div><br>
+          <div>
+            <label for="bio">Bio</label><br>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself..." cols="45" rows="10"></textarea>
+          </div><br>
+        </section>
+        <fieldset>
+          <legend>How did you hear about us</legend>
+            <div>
+              <input id="billboard" name="referral" type="radio" value="billboard">
+              <label for="billboard">Billboard</label>
+            </div>
+            <div>
+              <input id="radio ad" name="referral" type="radio" value="radio ad">
+              <label for="radio ad">Radio Advertisement</label>
+            </div>
+            <div>
+              <input id="internet ad" name="referral" type="radio" value="internet ad">
+              <label for="internet ad">Internet Advertisement</label>
+            </div>
+            <div>
+              <input id="other" name="referral" type="radio" value="other">
+              <label for="other">Other</label>
+            </div>
+        </fieldset><br>
+        <section>
+          <label for="browser">What web browser you are using</label>
+          <select id="browser" name="browser">
+            <option value="google">Google</option>
+            <option value="bing">Bing</option>
+            <option value="internet Ex">Internet Explorer</option>
+            <option value="netscape">Netscape</option>
+            <option value="yahoo">Yahoo</option>
+          </select>
+        </section><br>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
