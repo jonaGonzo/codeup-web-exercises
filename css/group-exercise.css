@@ -1,6 +1,16 @@
+* {
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    background-color: bisque;
+}
+
 .header{
     font-family: Arial;
     text-align: center;
+    font-size: xxx-large;
+    text-decoration: underline;
 }
 .first-h1-q1 {
     /*A font stack is a list of fonts in the CSS font-family, all separated by commas. Fonts are listed in order of preference that you would like them to appear in case of a problem, such as a font not working in the selected browser
