@@ -7,12 +7,15 @@ body, html {
 }
 
 .message {
-    margin: .5rem auto;
+    margin: .5rem 25%;
     border: 1px solid #d3d3d3;
     width: 50%;
     border-radius: 5px;
     height: 30px ;
-    padding: 0 2px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+
 }
 
 .message-info{
