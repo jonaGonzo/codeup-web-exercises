@@ -55,6 +55,51 @@
 
 // Create a function, findAverageDogAge, that takes in an array of pet objects with age properties and returns the average age of a dog.
 
+//     const pets = [
+//     {
+//         name: 'Sparky',
+//         type: 'Fish',
+//         age: 4
+//     },
+//     {
+//         name: 'Mr. Pig',
+//         type: 'Cat',
+//         age: 4
+//     },
+//     {
+//         name: 'Bubba',
+//         type: 'Dog',
+//         age: 5
+//     },
+//     {
+//         name: 'Pickles',
+//         type: 'Dog',
+//         age: 10
+//     }
+//
+// ];
+//
+// // findAverageDogAge(pets) // returns 7.5
+//
+// function findAverageDogAge(pets){
+//     let total = 0;
+//     let dogCount = 0;
+//     pets.forEach ((pet) => {
+//         if (pet.type === 'Dog'){
+//             total += pet.age;
+//             dogCount++
+//         }
+//     });
+//     return total / dogCount
+// }
+//
+// console.log(findAverageDogAge(pets));
+
+
+// ================================= WARM UP
+//
+// Create a function, returnPetsWithNoFish, that takes in an array of pet objects and returns an array of pet objects with no pets of type 'Fish'.
+
     const pets = [
     {
         name: 'Sparky',
@@ -72,16 +117,47 @@
         age: 5
     },
     {
-        name: 'Pickles',
+        name: 'Beans',
         type: 'Dog',
-        age: 10
+        age: 3
+    },
+    {
+        name: 'Mr. Salmon',
+        type: 'Fish',
+        age: 1
     }
-
 ];
-findAverageDogAge(pets);
-function findAverageDogAge(pets){
-let avgAge = (pets.age / pets.age.length) * pets.age.length;
-    return avgAge;
+
+function returnPetsWithNoFish(pets){
+    let output = []
+    pets.forEach((pet)=> {
+        if (pet.type !== 'Fish'){
+            output.push(pet)
+        }
+    })
+    return output
 }
 
-// findAverageDogAge(pets) // returns 7.5
+console.log(returnPetsWithNoFish(pets))
+
+
+
+// returnPetsWithNoFish(pets) // returns...
+//
+//     [
+//     {
+//         name: 'Mr. Pig',
+//         type: 'Cat',
+//         age: 4
+//     },
+//         {
+//             name: 'Bubba',
+//             type: 'Dog',
+//             age: 5
+//         },
+//         {
+//             name: 'Beans',
+//             type: 'Dog',
+//             age: 3
+//         }
+//     ]
