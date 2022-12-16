@@ -1,0 +1,49 @@
+.page-wrapper {
+    display: flex;
+}
+
+.container {
+    max-width: 100%;
+    height: 2rem;
+    background-color: gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+.column {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+}
+.follow-us {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    right: 5px;
+}
+
+svg {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+
+.logo {
+    font-size: x-large;
+}
+
+section.column.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
