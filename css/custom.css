@@ -1,0 +1,90 @@
+
+.page-wrapper {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar>.container-fluid{
+    display: flex;
+    justify-content: normal;
+    /*flex-grow: 2;*/
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: left;
+    /*flex-grow: 0;*/
+}
+.me-auto {
+    margin: 0 !important;
+}
+.form-control{
+    width: 200px;
+}
+.btn-outline-success {
+    width: 300px;
+    border: 2px solid #1387f6;
+    color: #1387f6;
+}
+
+.container-fluid a>svg{
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../photos/pizza.png") ;
+    height: 346px;
+    background-size: cover;
+}
+
+.light-title {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    opacity: .7;
+    width: 100%;
+}
+
+.menu-container {
+    border: 1px solid lightgrey;
+}
+
+.build-pizza-header {
+    margin-top: 30px;
+}
+
+
+.nav-item-pizza:active {
+    color: black;
+    background-color: #e7e7e7;
+}
+
+.card {
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.card-body{
+    margin: 0;
+    padding: 0;
+}
+
+.card-title{
+    width: 100%;
+    color: white;
+    background-color: #396bd9;
+}
