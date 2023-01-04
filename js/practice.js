@@ -230,7 +230,24 @@
 // iBeforeE(‘theirtheir’) // returns ‘thierthier’
 // let isEI = "string"
 
-function iBeforeE (str){
-    return str.replaceAll('ei', 'ie')
+// function iBeforeE (str){
+//     return str.replaceAll('ei', 'ie')
+// }
+// console.log(iBeforeE('hieght'))
+
+
+// ================================= WARM UP
+// Create a function, filterList, that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+console.log(filterList([1,2,"a","b"])) // returns [1,2]
+console.log(filterList([1,"a","b",0,15])) // returns [1,0,15]
+console.log(filterList([1,2,"aasf","1","123",123])) // returns [1,2,123]
+
+let input1 = [];
+let result = input1.filter(filterList)
+
+function filterList(input){
+        return input1 - result
 }
-console.log(iBeforeE('hieght'))
+
+
+
