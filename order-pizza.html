@@ -44,8 +44,8 @@
             <h1>Welcome to Pizza World!</h1>
         </div>
     </div>
+    <h2 class="build-pizza-header">Build Your Own Pizza!</h2>
     <div class="container menu-container">
-        <h2 class="build-pizza-header">Build Your Own Pizza!</h2>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
@@ -68,83 +68,187 @@
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h4 >Choose Size and Crust</h4>
+                <h4>Choose Size and Crust</h4>
                 <div class="card">
                     <div class="card-header">
                         Hand Tossed
                     </div>
-                    <div>Garlic seasoned crust with a rich, buttery taste.</div>
+                    <div class="crust-sub-header">Garlic seasoned crust with a rich, buttery taste.</div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Small (10")</label><br></li>
+                            <label for="html">Small (10")</label></li>
                         <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
+                            <label for="html">Medium (12")</label></li>
                     </ul>
                 </div>
                 <div class="card">
                     <div class="card-header">
                         Crispy Thin
                     </div>
-                    <div>Garlic seasoned crust with a rich, buttery taste.</div>
+                    <div class="crust-sub-header">Thin enough for optimum crispy to crunchy ratio.</div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
+                            <label for="html">Medium (12")</label></li>
                         <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Large (14")</label><br></li>
+                            <label for="html">Large (14")</label></li>
                     </ul>
                 </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item "><a class="page-link menu-next-btn" href="#">Next Step ></a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h4>Choose Cheese and Sauce</h4>
                 <div class="card">
                     <div class="card-header">
-                        Hand Tossed
+                        Cheese
                     </div>
-                    <div>Garlic seasoned crust with a rich, buttery taste.</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Small (10")</label><br></li>
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
-                    </ul>
+                    <div class="cheese-sauce">How Much?</div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Normal
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item" type="button">Light</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Normal</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Extra</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Double</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        Hand Tossed
+                        Sauce
                     </div>
-                    <div>Garlic seasoned crust with a rich, buttery taste.</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Small (10")</label><br></li>
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
-                    </ul>
+                    <div class="cheese-sauce">What Type?</div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Tomato
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item" type="button">Tomato</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Marinara</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">BBQ</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Alfredo</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cheese-sauce">How Much?</div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Normal
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item" type="button">Light</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Normal</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Extra</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item "><a class="page-link menu-next-btn" href="#">< Previous</a></li>
+                        <li class="page-item "><a class="page-link menu-next-btn" href="#">Next ></a></li>
+
+                    </ul>
+                </nav>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h4>Choose Toppings</h4>
                 <div class="card">
                     <div class="card-header">
-                        Hand Tossed
+                        Choose Meat
                     </div>
-                    <div>Garlic seasoned crust with a rich, buttery taste.</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Small (10")</label><br></li>
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
-                    </ul>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Beef
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Ham
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Philly Steak
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Bacon
+                        </label>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        Crispy Thin
+                        Choose Non-Meats
                     </div>
-                    <div>Thin enough for optimum crispy to crunchy ratio.</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Medium (12")</label><br></li>
-                        <li class="list-group-item"><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Large (14")</label><br></li>
-                    </ul>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Green Peppers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Mushrooms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Onions
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Jalapeño Peppers
+                        </label>
+                    </div>
                 </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item "><a class="page-link menu-next-btn" href="#">Checkout
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

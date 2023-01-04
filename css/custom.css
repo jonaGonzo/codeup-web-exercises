@@ -5,8 +5,9 @@
 }
 .navbar {
     display: flex;
-    position: sticky;
+    position: sticky !important;
     top: 0;
+    z-index: 100;
 }
 
 .container {
@@ -59,11 +60,14 @@
 }
 
 .menu-container {
+    width: 100%;
+    padding: 0;
     border: 1px solid lightgrey;
 }
 
 .build-pizza-header {
-    margin-top: 30px;
+    margin: 40px 30px;
+    padding-left: 70px;
 }
 
 
@@ -72,11 +76,11 @@
     background-color: #e7e7e7;
 }
 
-.card {
 
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.card {
+    width: 99%;
+    padding:0;
+    margin: 10px;
 }
 .card-body{
     margin: 0;
@@ -87,4 +91,53 @@
     width: 100%;
     color: white;
     background-color: #396bd9;
+}
+.crust-sub-header {
+    padding: 10px;
+}
+
+h4 {
+    width: 100%;
+    background-color: #1387f6;
+    color: white;
+}
+.dropdown-toggle {
+    white-space: nowrap;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    float: right;
+    width: 100%;
+    margin: 0;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-menu.show {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.cheese-sauce {
+    padding: 10px;
+}
+.pagination {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.menu-next-btn {
+    background-color: #1387f6;
+    color: white;
+}
+
+.form-check {
+    margin-left: 10px;
 }
