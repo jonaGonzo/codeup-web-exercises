@@ -242,12 +242,15 @@ console.log(filterList([1,2,"a","b"])) // returns [1,2]
 console.log(filterList([1,"a","b",0,15])) // returns [1,0,15]
 console.log(filterList([1,2,"aasf","1","123",123])) // returns [1,2,123]
 
-let input1 = [];
-let result = input1.filter(filterList)
+// let input1 = [];
+//
+// function filterList(input){
+// let result = input1.filter("string")
+//         return result;
+// }
 
 function filterList(input){
-        return input1 - result
+        return input.filter( str => typeof str !== "string")
 }
-
 
 
