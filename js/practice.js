@@ -238,9 +238,9 @@
 
 // ================================= WARM UP
 // Create a function, filterList, that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
-console.log(filterList([1,2,"a","b"])) // returns [1,2]
-console.log(filterList([1,"a","b",0,15])) // returns [1,0,15]
-console.log(filterList([1,2,"aasf","1","123",123])) // returns [1,2,123]
+// console.log(filterList([1,2,"a","b"])) // returns [1,2]
+// console.log(filterList([1,"a","b",0,15])) // returns [1,0,15]
+// console.log(filterList([1,2,"aasf","1","123",123])) // returns [1,2,123]
 
 // let input1 = [];
 //
@@ -249,8 +249,42 @@ console.log(filterList([1,2,"aasf","1","123",123])) // returns [1,2,123]
 //         return result;
 // }
 
-function filterList(input){
-        return input.filter( str => typeof str !== "string")
+// function filterList(input){
+//         return input.filter( str => typeof str !== "string")
+// }
+
+// ================================= WARM UP
+//
+// Create a function, zipArrays, that takes two array inputs of the same length and returns an array with the elements of both arrays alternating in the order of first[0], second[0], first[1], second[1], etc. If both arrays are empty, return an empty array.
+
+
+
+function zipArrays(first, second){
+    let output = [];
+    if (first.length ===0 ){
+        return output;
+    }
+    for (let i=0; i< first.length; i+= 1){
+        output.push(first[i]);
+        output.push(second[i]);
+    }
+    return output;
 }
+
+console.log(zipArrays([], [])) // returns []
+console.log(zipArrays([1], [2])) // returns [1, 2]
+console.log(zipArrays(['a', 'b'], ['c', 'd'])) // returns... ['a', 'c', 'b', 'd']
+console.log(zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25])) // returns...
+
+    // [
+    // 1,
+    //     'bob',
+    //     2,
+    //     null,
+    //     'a',
+    //     'sally',
+    //     'b',
+    //     25
+    // ]
 
 
