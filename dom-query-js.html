@@ -8,6 +8,7 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+
 <ul>
   <li data-dbid="1">Item 1</li>
   <li data-dbid="2">Item 2</li>
@@ -26,16 +27,49 @@
   culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="btn1">Click Me for Alert!</button>
+<button id="btn2">Click for another hello!</button>
+<button id="btn3">Thoughts about JS?</button>
+<button id="btn4">Mission Accomplished!</button>
+
 <script>
   (function() {
+    let btn1 = document.getElementById("btn1");
+    let btn2 = document.getElementById("btn2");
+    let btn3 = document.getElementById("btn3");
+    let btn4 = document.getElementById("btn4");
+
+
+
+    // let buttonOne = function () {
+    //   alert('Boom! You clicked my special button!');
+    // };
+    // document.getElementById('btn1').addEventListener('click', buttonOne);
+
+    btn1.addEventListener("click", () => {
+      alert('Boom! You clicked my special button!');
+    });
+
+    btn2.addEventListener("click", () => {
+      document.getElementById("sub-header")
+      const newElem = document.createElement("h4"); // creates a HTML element
+      newElem.textContent = "And again, hello..."; // <p>this is new content</p>
+      subHeader.appendChild(newElem);
+    })
+
+
+
+
     "use strict";
     // TODO: Uncomment next line and get the main header element by id
     let mainHeader = document.getElementById("main-header");
     console.log(mainHeader.textContent);
 
     // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+    btn3.addEventListener("click", () => {
     let divElement = document.getElementById("main-header");
     divElement.innerHTML += "<p>JavaScript is Cool</p>";
+    })
 
     // TODO: Uncomment the next line and get the sub header element by id
     let subHeader = document.getElementById("sub-header");
@@ -63,9 +97,15 @@
     // TODO: Uncomment the next line and get all elements with class name sub-paragraph
     let subParagraphs = document.getElementsByClassName("sub-paragraph");
     console.log(subParagraphs)
+
     // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+    btn4.addEventListener("click", () => {
     subParagraphs[0].innerHTML = "Mission Accomplished!";
+    })
   })();
+
+
+
 </script>
 </body>
 </html>
