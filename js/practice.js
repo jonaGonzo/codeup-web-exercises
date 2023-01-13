@@ -346,18 +346,16 @@
 */
 
 
-function onlyOddnumbers(num){
-    let odd = []
-    for (let i = 0; i < num.length; i++) {
-        if (num[i] % 2 !== 0) {
-            odd.push(num[i])
-        }
-    }
-    return odd
+// This loop should print the numbers from 0 through 9 in the console
+
+// for (let i = 0; i < 10; i++) {
+//     console.log("The value of i is " + i);
+// }
+
+// desired output : 0, 1 ,2,  3, 4, 5, 6, 7, 8, 9
+let band = {};
+
+
+band.shred = function() {
+    console.log('RAAAAAAAAAA!!!!');
 }
-
-console.log(onlyOddnumbers([-4, -3, 1]))
-
-
-
-
