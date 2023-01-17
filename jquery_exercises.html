@@ -8,10 +8,10 @@
 <body>
 <div class="div-jquery" id="div-jquery">
     <h1 class="h1-jquery" id="h1-jquery">Hello San Antonio!</h1>
-    <p class="p-jquery" id="codeUp">Cradle of Freedom</p>
-    <ul class="removed-border" id="ul-jquery">
-        <li class="codeUp" id="li-jquery1">HISTORY</li>
-        <li class="codeUp" id="li-jquery2">ENTERTAINMENT</li>
+    <p class="p-jquery" id="p-jquery">Cradle of Freedom</p>
+    <ul class="removed-border" id="codeup">
+        <li class="codeup" id="li-jquery1">HISTORY</li>
+        <li class="codeup" id="li-jquery2">ENTERTAINMENT</li>
     </ul>
 </div>
 
@@ -22,23 +22,23 @@
     // });
 
 // jQuery to select an element by the id. Alert the contents of the element.
-//     let contents = $('#h1-jquery').html();
-//     alert(contents);
+    //     let contents = $('#h1-jquery').html();
+    //     alert(contents);
 
 // Update the jQuery code to select and alert a different id
-//     let contents2 = $('#p-jquery').html();
-//     alert(contents2);
+    //     let contents2 = $('#p-jquery').html();
+    //     alert(contents2);
 
 // Use the same id on 2 elements. How does this change the jQuery selection?
-//&&&&&&&&&&&&&&&&&& It showed two alerts, one with the contents of the first id and the other as 'undefined'. &&&&&&&&
+    //&&&&&&&&&&&&&&&&&& It showed two alerts, one with the contents of the first id and the other as 'undefined'. &&&&&&&&
 
 // Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
-// $(".codeUp").css("border", "solid 1px red");
+    // $(".codeup").css("border", "solid 1px red");
 
 // Remove the class from one of the elements. Refresh and test that the border has been removed.
     //&&&&&&&&&&&&&&&& It removed border and repaced clas name with "removed-border" &&&&&&&&&&&&&&
 
-    // Give another element an id of codeup. Does this element get a border now?
+// Give another element an id of codeup. Does this element get a border now?
     //&&&&&&&&&&&&&&&& No it doesn't give a borer. &&&&&&&&&&&&&&&&&&&&&&
 
 // Using jQuery, set the font-size of all li elements to 20px
@@ -55,6 +55,7 @@
 
 // Combine your selectors that highlight all the h1, p, and li elements.
     $("h1, p, li").css("background-color", "yellow")
+
 </script>
 </body>
 </html>
