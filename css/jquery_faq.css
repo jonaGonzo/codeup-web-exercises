@@ -1,0 +1,42 @@
+
+.invisible {
+    visibility: hidden;
+}
+
+.highlight {
+    background-color: yellow;
+    width: fit-content;
+}
+
+h1{
+    font-size: 40px;
+    margin-left: 25%;
+}
+
+a {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    background-color: indianred;
+    color: white;
+    height: 2em;
+    margin: 0 40rem;
+    text-decoration: none;
+}
+
+dl {
+    margin: 5% 20%;
+}
+
+dt {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+dd {
+    font-size: 18px;
+    color: red;
+    white-space: pre-wrap;
+}

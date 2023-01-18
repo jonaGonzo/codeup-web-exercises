@@ -17,45 +17,79 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
+    // $document.ready(function () {
     // $(function () {
     //     alert('The DOM has finished loading!');
     // });
 
-// jQuery to select an element by the id. Alert the contents of the element.
+    // jQuery to select an element by the id. Alert the contents of the element.
     //     let contents = $('#h1-jquery').html();
     //     alert(contents);
 
-// Update the jQuery code to select and alert a different id
+    // Update the jQuery code to select and alert a different id
     //     let contents2 = $('#p-jquery').html();
     //     alert(contents2);
 
-// Use the same id on 2 elements. How does this change the jQuery selection?
+    // Use the same id on 2 elements. How does this change the jQuery selection?
     //&&&&&&&&&&&&&&&&&& It showed two alerts, one with the contents of the first id and the other as 'undefined'. &&&&&&&&
 
-// Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
+    // Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
     // $(".codeup").css("border", "solid 1px red");
 
-// Remove the class from one of the elements. Refresh and test that the border has been removed.
+    // Remove the class from one of the elements. Refresh and test that the border has been removed.
     //&&&&&&&&&&&&&&&& It removed border and repaced clas name with "removed-border" &&&&&&&&&&&&&&
 
-// Give another element an id of codeup. Does this element get a border now?
+    // Give another element an id of codeup. Does this element get a border now?
     //&&&&&&&&&&&&&&&& No it doesn't give a borer. &&&&&&&&&&&&&&&&&&&&&&
 
-// Using jQuery, set the font-size of all li elements to 20px
-    $("li").css("font-size", "20px")
+    // Using jQuery, set the font-size of all li elements to 20px
+    //     $("li").css("font-size", "20px")
 
-// Craft selectors that highlight all the h1, p, and li elements.
-    $("h1").css("background-color", "yellow")
-    $("p").css("background-color", "yellow")
-    $("li").css("background-color", "yellow")
+    // Craft selectors that highlight all the h1, p, and li elements.
+    // $("h1").css("background-color", "yellow")
+    // $("p").css("background-color", "yellow")
+    // $("li").css("background-color", "yellow")
 
-// Create a jQuery statement to alert the contents of your h1 element(s)
-    let contents = $('h1').html();
-        alert(contents);
+    // Create a jQuery statement to alert the contents of your h1 element(s)
+    // let contents = $('h1').html();
+    // alert(contents);
 
-// Combine your selectors that highlight all the h1, p, and li elements.
-    $("h1, p, li").css("background-color", "yellow")
+    // Combine your selectors that highlight all the h1, p, and li elements.
+    // $("h1, p, li").css("background-color", "yellow")
 
+
+    //   Extra Practice  //
+    //     $("li").on("click", function () {
+    //         let $parentUL = $(this).parents("ul")
+    //         let color = $parentUL.attr("data-color");
+    //         let $listItems = $parentUL.find("li")
+    //
+    //         switch (color) {
+    //             case "red":
+    //                 $listItems.toggleClass("red-border");
+    //                 break;
+    //             case "blue":
+    //                 $listItems.toggleClass("blue-border");
+    //                 break;
+    //         }
+    //     })
+
+    $('h1').click(function () {
+        $(this).css("background-color", "green");
+    });
+
+    $('p').dblclick(function () {
+        $(this).css("font-size", "18px");
+    });
+
+    $('li').hover(function () {
+     $("li").css("color", "red");
+    }, function (){
+        $("li").css("color", "black")
+        });
+
+
+    // });
 </script>
 </body>
 </html>
