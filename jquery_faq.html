@@ -80,8 +80,9 @@
         </dd>
     </dl>
 </section>
-<section>
-    <button type="button" id="btn-li">Click to see My Favorite Facts</button>
+<h2>National Parks and Facts</h2>
+<button class="parks-btn" type="button" id="btn-li">Click to see My Favorite Facts</button>
+<section class="parks">
     <h3>Zion National Park</h3>
     <ul id="zion">
         <li>Zion originally was designated as a national monument by former President William Howard Taft, and was
@@ -119,6 +120,25 @@
         </li>
     </ul>
 </section>
+<section class="picture-section">
+    <main class="picture-div">
+        <div class="picture-frame photo1">
+        </div>
+    </main>
+    <main class="picture-div">
+        <div class="picture-frame photo2">
+        </div>
+    </main>
+    <main class="picture-div">
+        <div class="picture-frame photo3">
+        </div>
+    </main>
+    <div>
+    <button class="picture-btn btn1" type="button">Swap Me</button>
+    <button class="picture-btn btn2" type="button">Swap Me</button>
+    <button class="picture-btn btn3" type="button">Swap Me</button>
+    </div>
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -130,7 +150,7 @@
             $(this).toggleClass('highlight')
 
         });
-        $('button').click(function (){
+        $('.parks-btn').click(function () {
             $('ul')
                 .children()
                 .next()
@@ -139,18 +159,28 @@
                 .toggleClass('highlight')
         })
 
-        $('h3').click(function (){
+        $('h3').click(function () {
             $(this)
                 .next()
                 .toggleClass('font-bold')
         })
 
-        $('li').click(function (){
+        $('li').click(function () {
             $(this)
                 .parent()
                 .children()
                 .first()
                 .toggleClass('parent-blue')
+        })
+
+        $('.btn1').click(function (){
+            $('.photo1, .photo2').toggleClass("photo2").toggleClass("photo1")
+        })
+        $('.btn3').click(function (){
+            $('.photo3, .photo2').toggleClass("photo2").toggleClass("photo3")
+        })
+        $('.btn2').click(function (){
+            $('.photo1, .photo3').toggle()
         })
     })
 

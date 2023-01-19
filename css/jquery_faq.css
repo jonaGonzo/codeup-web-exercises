@@ -5,12 +5,12 @@ a {
     background-color: indianred;
     color: white;
     height: 2em;
-    margin: 0 40rem;
+    margin: 2rem 40rem;
     text-decoration: none;
 }
 
 dl {
-    margin: 5% 20%;
+    margin: 0 20%;
 }
 
 dt {
@@ -31,11 +31,28 @@ h1{
     margin-left: 25%;
 }
 
-button {
+h3 {
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+.parks-btn {
+    margin-left: 1em;
     border: 1px solid green;
     background-color: yellowgreen;
     color: white;
 }
+.parks {
+    display: flex;
+    flex-direction: row;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+}
+ li {
+     list-style: circle;
+ }
 
 .invisible {
     visibility: hidden;
@@ -54,7 +71,38 @@ button {
     color: blue;
 }
 
+.picture-section{
+    margin-left: 10%;
 
+}
+.picture-section main {
+    display: inline-block;
+}
 
+.picture-frame {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gold;
+    margin: 0 2em;
+    height: 20em;
+    width: 20em;
+}
 
+.picture-btn {
+    margin: 0 12em;
+}
 
+.photo1 {
+    background-image: url("../photos/Beach_sunset_with_tree_centered.jpg");
+    background-size: cover;
+}
+
+.photo2 {
+    background-image: url("../photos/Laptop_and_notepad.jpg");
+    background-size: cover;
+}
+
+.photo3 {
+    background-image: url("../photos/Beach_wave_shaped_as_heart.jpg");
+    background-size: cover;
+}
