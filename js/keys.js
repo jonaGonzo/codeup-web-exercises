@@ -1,3 +1,3 @@
 const keys = {
-    mapbox: "your mama"
+    mapbox: "your mother"
 }
