@@ -14,13 +14,13 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
+            <img src="./photos/blog-image.jpeg" style="width: 25%" class="rounded-5 mt-5"
+                 alt="Comic image of a joke about a blog ">
             <div class="col-12" id="posts">
-
             </div>
         </div>
     </div>
-
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -34,10 +34,10 @@
             let html = "";
             for (let i = 0; i < blog.length; i++) {
                 html += `
-                <div class="my-2 mt-5 h4 bg-success text-dark bg-opacity-50 shadow">${blog[i].title}</div>
+                <h4 class="my-2 mt-5 px-4 bg-success text-dark bg-opacity-50 shadow">${blog[i].title}</h4>
                  <div class="my-2 mt-3">${blog[i].content}</div>
-                 <div class="my-2 h6 d-flex justify-content-end">${blog[i].categories}</div>
-                  <div class="my-2 h6 d-flex justify-content-end" >${blog[i].date}</div>
+                 <h6 class="my-2 d-flex justify-content-end">${blog[i].categories}</h6>
+                  <h6 class="my-2 d-flex justify-content-end" >${blog[i].date}</h6>
                 `
             }
             $('#posts').append(html)
