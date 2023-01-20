@@ -66,11 +66,11 @@
     zoom: 10,
     center: [-98.4916, 29.4252]
   });
-  // let marker = new mapboxgl.Marker()
-  //         .setLngLat([-98.4916, 29.4260])
-  //         .addTo(map);
-  // let alamoPopup = new mapboxgl.Popup()
-  //         .setHTML("<p>Remember The Alamo!</p>")
+  let marker = new mapboxgl.Marker()
+          .setLngLat([-98.4916, 29.4260])
+          .addTo(map);
+  let alamoPopup = new mapboxgl.Popup()
+          .setHTML("<p>Remember The Alamo!</p>")
   marker.setPopup(alamoPopup)
 
   geocode("600 Navarro St #350, San Antonio, TX 78205", keys.mapbox).then(function(result) {
