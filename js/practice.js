@@ -276,16 +276,16 @@
 // console.log(zipArrays(['a', 'b'], ['c', 'd'])) // returns... ['a', 'c', 'b', 'd']
 // console.log(zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25])) // returns...
 
-    // [
-    // 1,
-    //     'bob',
-    //     2,
-    //     null,
-    //     'a',
-    //     'sally',
-    //     'b',
-    //     25
-    // ]
+// [
+// 1,
+//     'bob',
+//     2,
+//     null,
+//     'a',
+//     'sally',
+//     'b',
+//     25
+// ]
 
 //
 // ================================= WARM UP
@@ -360,70 +360,91 @@
 // Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable if the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.
 
 // example data...
+//
+// const neighborhood1 = {
+//     neighborhood: "Lovely Estates",
+//     medianHomePrice: 280000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 6},
+//         {name: "High School", rating: 8}
+//     ]
+// };
+//
+// const neighborhood2 = {
+//     neighborhood: "Luminous Estates",
+//     medianHomePrice: 270000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "high",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 8},
+//         {name: "High School", rating: 8}
+//     ]
+// }
+//
+// const neighborhood3 = {
+//     neighborhood: "Oak Mountain",
+//     medianHomePrice: 290000,
+//     pool: false,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 8},
+//         {name: "High School", rating: 8}
+//     ]
+// }
+//
+// const neighborhood4 = {
+//     neighborhood: "Ginormous Acres",
+//     medianHomePrice: 350000,
+//     pool: true,
+//     tennis: true,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 9},
+//         {name: "Middle School", rating: 9},
+//         {name: "High School", rating: 9}
+//     ]
+// }
+//
+// function fn(hood) {
+//     let schoolRatingTotal = 0;
+//     let homePrice =  Number(hood.medianHomePrice) < 300000
+//     let crime = hood.crimeRate.toLowerCase() === `low`
+//     hood.schools.forEach(function (school) {
+//         schoolRatingTotal = schoolRatingTotal + school.rating;
+//     })
+//     return homePrice && crime && schoolRatingTotal >= 24;
+// }
+//
+// console.log(fn(neighborhood1)) // returns false due to school rating
+// console.log(fn(neighborhood2)) // returns false due to crime rate
+// console.log(fn(neighborhood3)) // returns true
+// console.log(fn(neighborhood4)) // returns false due to median home price
 
-const neighborhood1 = {
-    neighborhood: "Lovely Estates",
-    medianHomePrice: 280000,
-    pool: true,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 6},
-        {name: "High School", rating: 8}
-    ]
-};
+// Create a function, encodeStr, that takes in a string and returns the string of characters with the following substitutions:
+//
+// function encodeStr(input) {
+//        return input
+//            .replace(/a/gi, "@")
+//            .replace(/i/gi, "1")
+//            .replace(/s/gi, "$")
+//
+// }
+//
+// // ‘a’ or ‘A’ becomes ‘@’
+// // ‘i’ or ‘I’ becomes ‘1’
+// // ‘s’ or ‘S’ becomes ‘$’
+// //
+// console.log(encodeStr('apple')) // returns ‘@pple’
+// console.log(encodeStr('codeup')) // returns ‘codeup’
+// console.log(encodeStr('SASS')) // returns ‘$@$$’
+// console.log(encodeStr('bike')) // returns ‘b1ke’
 
-const neighborhood2 = {
-    neighborhood: "Luminous Estates",
-    medianHomePrice: 270000,
-    pool: true,
-    tennis: false,
-    crimeRate: "high",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 8},
-        {name: "High School", rating: 8}
-    ]
-}
 
-const neighborhood3 = {
-    neighborhood: "Oak Mountain",
-    medianHomePrice: 290000,
-    pool: false,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 8},
-        {name: "High School", rating: 8}
-    ]
-}
-
-const neighborhood4 = {
-    neighborhood: "Ginormous Acres",
-    medianHomePrice: 350000,
-    pool: true,
-    tennis: true,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 9},
-        {name: "Middle School", rating: 9},
-        {name: "High School", rating: 9}
-    ]
-}
-
-function fn(hood) {
-    let schoolRatingTotal = 0;
-    let homePrice =  Number(hood.medianHomePrice) < 300000
-    let crime = hood.crimeRate.toLowerCase() === `low`
-    hood.schools.forEach(function (school) {
-        schoolRatingTotal = schoolRatingTotal + school.rating;
-    })
-    return homePrice && crime && schoolRatingTotal >= 24;
-}
-
-console.log(fn(neighborhood1)) // returns false due to school rating
-console.log(fn(neighborhood2)) // returns false due to crime rate
-console.log(fn(neighborhood3)) // returns true
-console.log(fn(neighborhood4)) // returns false due to median home price
