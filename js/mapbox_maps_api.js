@@ -29,8 +29,6 @@ $(document).ready(function () {
         },
     ]
 
-
-
     mapboxgl.accessToken = keys.mapbox;
     let map = new mapboxgl.Map({
         container: 'map',
@@ -38,9 +36,7 @@ $(document).ready(function () {
         zoom: 15,
         center: [-73.98940023456997, 40.72611560026318]
     });
-    theSpots.forEach(function (){
 
-    })
     theSpots.forEach(item => {
         let marker = new mapboxgl.Marker()
             .setLngLat(item.location)

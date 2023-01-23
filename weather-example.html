@@ -25,12 +25,15 @@
   }).done(function(data) {
     // can be used to get forecast conditions at current time in increments of 24 hours
     for (let i = 0; i < data.list.length; i += 8) {
+
       console.log(data.list[i]);
     }
   }).fail(function(jqXhr, status, error) {
     console.log(jqXhr);
     console.log(status);
     console.log(error);
+
+
   });
 </script>
 </body>
