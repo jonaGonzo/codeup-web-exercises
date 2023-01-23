@@ -1,4 +1,19 @@
+.page-wrapper{
+    background-color: #f6eecd;
+   height:  100vh;
+}
+
 #map {
     height: 60em;
-    width: 40em;
+    width: 90em;
+}
+
+.card-body {
+    width: 10em;
+    height: auto;
+}
+
+.img {
+    width: 100%;
+    height: auto;
 }
