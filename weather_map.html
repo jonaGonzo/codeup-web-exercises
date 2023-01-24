@@ -18,11 +18,11 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="d-flex" role="search">
-            <input id="userSearch" class="form-control me-1 " type="text" placeholder="Enter City" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
+            <input id="userSearch" class="form-control me-1 " placeholder="Enter City" aria-label="Search">
+            <button id="button" class="btn btn-outline-primary" type="submit">Search</button>
         </form>
     </div>
-        <div class="current-city w-25 px-3 d-flex justify-content-end">Current City: </div>
+    <div class="current-city w-25 px-3 d-flex justify-content-end"><div id="current-city">Current City: Maxwell, TX</div></div>
 </nav>
 <div class="page-wrapper">
     <main class="container-fluid">
@@ -31,9 +31,7 @@
             </div>
         </div>
         <div class="row mx-0">
-            <div id="map" class="col-12">
-
-            </div>
+            <div id="map"></div>
         </div>
     </main>
 </div>
@@ -53,6 +51,7 @@
 <script>
     $(document).ready(function () {
         "use strict";
+
         mapboxgl.accessToken = keys.mapbox;
         let map = new mapboxgl.Map({
             container: 'map',
@@ -61,23 +60,24 @@
             center: [-97.79340512537243, 29.880967664323432]
         });
         // Search for City
-        let value = $('#userSearch').val();
-        $('button').on("click", function (e){
+        $('#button').click(function (e) {
             e.preventDefault()
-            geocode(value, keys.mapbox).then(function (data){
-        console.log(value)
+            geocode($('#userSearch').val(), keys.mapbox).then(function (data) {
+                let lat = data[1];
+                let lon = data[0];
                 $.get('https://api.openweathermap.org/data/2.5/forecast', {
-                    lat: data[1],
-                    lon: data[0],
+                    lat: lat,
+                    lon: lon,
                     appid: keys.weather,
                     units: "imperial"
                 }).done(function (data) {
+
                     console.log(data)
                     let weatherData = "";
                     // can be used to get forecast conditions at current time in increments of 24 hours
-                    for (let i = 0; i <data.list.length; i += 8) {
+                    for (let i = 0; i < data.list.length; i += 8) {
                         const d = new Date(`${data.list[i].dt_txt}`);
-                        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                         const day = weekday[d.getDay()];
                         weatherData += `<div class="card d-inline-block" style="width: 18rem;">
                     <div class="card-header">
@@ -93,6 +93,7 @@
                     </ul>
                 </div>`
                         $('#cards').html(weatherData)
+                        $('#current-city').html(`Current City: ${data.city.name}`)
                         console.log(data.list[i])
                     }
                 }).fail(function (jqXhr, status, error) {
@@ -100,9 +101,13 @@
                     console.log(status);
                     console.log(error);
                 });
+                map.flyTo({
+                    center: data
+                })
             })
         })
-        // Weather Cards
+
+        // Weather API
         // $.get('https://api.openweathermap.org/data/2.5/forecast', {
         //     q: "Maxwell, Texas",
         //     appid: keys.weather,
