@@ -41,11 +41,13 @@ html {
     font-family: "Rockwell", serif;
     color: white !important;
 }
-#cards{
+
+#cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .weatherCard {
     display: flex;
     flex-direction: column;
