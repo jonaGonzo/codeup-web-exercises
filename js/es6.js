@@ -79,6 +79,7 @@ users.forEach(function(user) {
     // const languages = user.languages;
 
     // TODO: rewrite the assignment below to use template strings
+
     developers.push(`${name}'s email is ${email}. ${name} knows ${languages.join(', ')}.`);
 });
 console.log(developers)
@@ -95,3 +96,4 @@ for(let developer of developers) {
 list += `</ul>`;
 
 console.log(list)
+console.log(...names)
