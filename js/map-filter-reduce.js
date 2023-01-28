@@ -72,3 +72,8 @@ let instructorString = userString.slice(0, -2) + `.`
 console.log(instructorString)
 
 // BONUS
+let getLanguages = users.reduce((arr, lang) => {
+    arr.push(lang.languages)
+    return arr
+}, [])
+console.log(getLanguages)
