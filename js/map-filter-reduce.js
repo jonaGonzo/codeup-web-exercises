@@ -70,3 +70,5 @@ let userString = userNames.reduce((str, currentName) => {
 },'Your instructors are: ');
 let instructorString = userString.slice(0, -2) + `.`
 console.log(instructorString)
+
+// BONUS
