@@ -27,4 +27,18 @@
 
     let answer = await timeCommit("jonaGonzo")
     console.log(answer)
+
+
+// function wait(num) {
+//     const time = new Promise(async (resolve) => {
+//         setTimeout(() => {
+//             resolve(`You'll see this after seconds`);
+//         },)
+//     })
+// }
+
+
+
+
 })();
+
