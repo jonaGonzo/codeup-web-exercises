@@ -39,41 +39,35 @@ const users = [
 
 // 2.
 
-let userLang = users.filter(function (user){
-   return user.languages[2]
-});
+const userLang = users.filter((user) => user.languages.length >= 3);
 console.log(userLang)
 
 // 3.
 
-let emails = users.map(function (user){
-    return user.email
-});
+const emails = users.map((user) => user.email)
 console.log(emails)
 
 // 4.
-let userAge = users.reduce((total, experience ) => {
-   return  total + experience.yearsOfExperience
-}, 0);
-console.log(userAge)
+const userExperience = users.reduce((total, user ) => total + user.yearsOfExperience,0);
+console.log(userExperience)
+console.log(userExperience/users.length)
 
 // 5.
-let userEmails = users.map((user) => user.email);
+const userEmails = users.map((user) => user.email);
 console.log(userEmails)
-let longestEmail = userEmails.reduce((accumulator, email) => email.length > accumulator.length ? email : accumulator, " ");
+const longestEmail = userEmails.reduce((longestEmail, userEmail) => userEmail.length > longestEmail.length ? userEmail : longestEmail, " ");
 console.log(longestEmail)
 
 // 6.
-let userNames = users.map((user) => `${user.name}`);
-let userString = userNames.reduce((str, currentName) => {
+const userNames = users.map((user) => `${user.name}`);
+const userString = userNames.reduce((str, currentName) => {
     return (str + `${currentName}, `);
-},'Your instructors are: ');
-let instructorString = userString.slice(0, -2) + `.`
-console.log(instructorString)
+},'Your instructors are: ').slice(0, -2) + `.`
+console.log(userString)
 
 // BONUS
-let getLanguages = users.reduce((arr, lang) => {
-    arr.push(lang.languages)
-    return arr
+const getLanguages = users.reduce((acc, user) => {
+    acc.push(user.languages)
+    return acc
 }, [])
 console.log(getLanguages)
