@@ -449,34 +449,34 @@
 
 // Make a function, reverseStrings, that takes in an array of objects and reverses the value of the 'str' properties.
 
-function reverseStrings(strs) {
-    for(let i=0; i<strs.length; i++){
-     strs[i].str = strs[i].str.split("").reverse().join("")
-    }
-    return strs
-}
-
-
-    const strs = [
-    {
-        id: 1,
-        str: 'hello'
-    },
-    {
-        id: 2,
-        str: 'world'
-    },
-    {
-        id: 3,
-        str: 'codeup'
-    },
-    {
-        id: 4,
-        str: 'x'
-    }
-]
-
-console.log(reverseStrings(strs)) // returns...
+// function reverseStrings(strs) {
+//     for(let i=0; i<strs.length; i++){
+//      strs[i].str = strs[i].str.split("").reverse().join("")
+//     }
+//     return strs
+// }
+//
+//
+//     const strs = [
+//     {
+//         id: 1,
+//         str: 'hello'
+//     },
+//     {
+//         id: 2,
+//         str: 'world'
+//     },
+//     {
+//         id: 3,
+//         str: 'codeup'
+//     },
+//     {
+//         id: 4,
+//         str: 'x'
+//     }
+// ]
+//
+// console.log(reverseStrings(strs)) // returns...
     //
     // [
     // {
@@ -496,3 +496,11 @@ console.log(reverseStrings(strs)) // returns...
     //         str: 'x'
     //     }
     // ]
+foods = [ "apple", "orange", "plum"]
+
+function logFoods(input){
+    foods.forEach((input) => {
+        console.log(`Here's a food I like: ${input} `)
+    })
+}
+logFoods(foods)
