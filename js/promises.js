@@ -33,7 +33,7 @@
 //     const time = new Promise(async (resolve) => {
 //         setTimeout(() => {
 //             resolve(`You'll see this after seconds`);
-//         },)
+//         },3000)
 //     })
 // }
 
